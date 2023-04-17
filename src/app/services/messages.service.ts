@@ -1,15 +1,14 @@
-import { Statement } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 export class MessagesService {
 	private messages: string[] = []
 
-  constructor() {}
+	constructor() { }
 
-		addMessage(message: string) {
+	addMessage(message: string) {
 		this.messages.push(message)
 	}
 
@@ -17,7 +16,8 @@ export class MessagesService {
 		return this.messages
 	}
 
-	clearMessages(){
+	clearMessages() {
 		this.messages = []
 	}
+
 }

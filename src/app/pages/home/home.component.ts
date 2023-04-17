@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { MessagesService } from '../../services/messages.service'
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+	selector: 'app-home',
+	templateUrl: './home.component.html',
+	styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
 	tweets: string[] = []
@@ -14,5 +14,6 @@ export class HomeComponent implements OnInit {
 	ngOnInit(): void {
 		this.tweets = this.service.getMessages()
 	}
+
 
 }
